@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypto_wpf", "crypto_wpf\crypto_wpf.csproj", "{55C3DC92-CE90-43B8-866D-9EF8570F3CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api_test", "api_test\api_test.csproj", "{1179AC55-90A6-432A-B7AD-6FC3815389CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C3DC92-CE90-43B8-866D-9EF8570F3CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C3DC92-CE90-43B8-866D-9EF8570F3CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C3DC92-CE90-43B8-866D-9EF8570F3CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C3DC92-CE90-43B8-866D-9EF8570F3CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1179AC55-90A6-432A-B7AD-6FC3815389CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1179AC55-90A6-432A-B7AD-6FC3815389CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1179AC55-90A6-432A-B7AD-6FC3815389CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1179AC55-90A6-432A-B7AD-6FC3815389CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E538B6F-E468-42A9-869C-1F8AD4AE1923}
+	EndGlobalSection
+EndGlobal

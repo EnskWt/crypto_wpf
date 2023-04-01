@@ -1,0 +1,17 @@
+E:\Projects\crypto_wpf\api_test\bin\Debug\net7.0\api_test.exe
+E:\Projects\crypto_wpf\api_test\bin\Debug\net7.0\api_test.deps.json
+E:\Projects\crypto_wpf\api_test\bin\Debug\net7.0\api_test.runtimeconfig.json
+E:\Projects\crypto_wpf\api_test\bin\Debug\net7.0\api_test.dll
+E:\Projects\crypto_wpf\api_test\bin\Debug\net7.0\api_test.pdb
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.csproj.AssemblyReference.cache
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.AssemblyInfoInputs.cache
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.AssemblyInfo.cs
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.csproj.CoreCompileInputs.cache
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.dll
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\refint\api_test.dll
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.pdb
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.genruntimeconfig.cache
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\ref\api_test.dll
+E:\Projects\crypto_wpf\api_test\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Projects\crypto_wpf\api_test\obj\Debug\net7.0\api_test.csproj.CopyComplete

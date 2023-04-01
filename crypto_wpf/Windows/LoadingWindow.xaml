@@ -1,0 +1,12 @@
+﻿<Window x:Class="crypto_wpf.LoadingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:crypto_wpf"
+        mc:Ignorable="d"
+        Title="LoadingWindow" Height="450" Width="800" Initialized="Window_Initialized">
+    <Grid>
+        <Button x:Name="login_Button" Content="Log In" HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top" Width="310" Height="38" Click="login_Button_Click"/>
+    </Grid>
+</Window>

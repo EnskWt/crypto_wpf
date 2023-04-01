@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rQyrT4n1dV/DDdIgxMCUUBOCmwWijzbnIpbTC1m9xHMWKNc8vGvGsJyRas6sDGkurOuqCgEtlWREHpGbJRe0uA==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\crypto_wpf\\crypto_wpf\\crypto_wpf.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igorn\\.nuget\\packages\\coingeckoasyncapi\\1.7.0\\coingeckoasyncapi.1.7.0.nupkg.sha512",
+    "C:\\Users\\igorn\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

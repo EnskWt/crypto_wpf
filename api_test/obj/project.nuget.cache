@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AionDpk6+HefO307pfIhxcA4NbJX5MLbgu1KyxUCE7tGiW8gIXqqFPPTLIQ+nZb12Rk5Hy/OKGhr7dWiCfG+9w==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\crypto_wpf\\api_test\\api_test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igorn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
