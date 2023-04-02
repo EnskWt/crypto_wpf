@@ -7,10 +7,12 @@ using System.Data;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -22,16 +24,14 @@ namespace crypto_wpf.Windows
 {
     public partial class MainWindow : Window
     {
-        DataTable table = new DataTable();
-
         private readonly MainViewModel viewModel = new MainViewModel();
-        public class Currency
-        {
-            public string? id { get; set; }
-            public string? symbol { get; set; }
-            public string? name { get; set; }
-        }
 
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            DataContext = viewModel;
+        }
 
         private async void Window_Initialized(object sender, EventArgs e)
         {
@@ -42,11 +42,30 @@ namespace crypto_wpf.Windows
             topCurrency_dataGrid.ItemsSource = topCurrencyTable.DefaultView;
         }
 
-        public MainWindow()
+        private void Window_Closed(object sender, EventArgs e)
         {
-            InitializeComponent();
+            Application.Current.Shutdown();
+        }
 
-            DataContext = viewModel;
+        private void search_Button_Click(object sender, RoutedEventArgs e)
+        {
+            DataStorage.SearchParameter = search_TextBox.Text;
+            CoinWindow coinWindow = new CoinWindow();
+            coinWindow.Show();
+        }
+
+        private void currency_dataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DataStorage.CoinId = (currency_dataGrid.SelectedItem as DataRowView)?.Row["ID"].ToString(); /* The currently selected row is represented as a DataRow system class and due to this it can use the methods of the DataRow class */
+            CoinWindow coinWindow = new CoinWindow();
+            coinWindow.Show();
+    }
+
+        private void topCurrency_dataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DataStorage.CoinId = (topCurrency_dataGrid.SelectedItem as DataRowView)?.Row["ID"].ToString(); /* The currently selected row is represented as a DataRow system class and due to this it can use the methods of the DataRow class */
+            CoinWindow coinWindow = new CoinWindow();
+            coinWindow.Show();
         }
     }
 }

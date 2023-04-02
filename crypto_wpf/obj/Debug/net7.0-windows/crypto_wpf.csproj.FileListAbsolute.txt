@@ -3,7 +3,6 @@ E:\Projects\crypto_wpf\crypto_wpf\bin\Debug\net7.0-windows\crypto_wpf.deps.json
 E:\Projects\crypto_wpf\crypto_wpf\bin\Debug\net7.0-windows\crypto_wpf.runtimeconfig.json
 E:\Projects\crypto_wpf\crypto_wpf\bin\Debug\net7.0-windows\crypto_wpf.dll
 E:\Projects\crypto_wpf\crypto_wpf\bin\Debug\net7.0-windows\crypto_wpf.pdb
-E:\Projects\crypto_wpf\crypto_wpf\bin\Debug\net7.0-windows\CoinGecko.dll
 E:\Projects\crypto_wpf\crypto_wpf\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\crypto_wpf.csproj.AssemblyReference.cache
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\App.g.cs
@@ -24,3 +23,6 @@ E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\LoadingWindow
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\LoadingWindow.baml
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\MainWindow.g.cs
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\MainWindow.baml
+E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\CoinWindow.g.cs
+E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\CoinWindow.baml
+E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace crypto_wpf.ViewModels
 {
-    public class LoadingViewModel : INotifyPropertyChanged
+    internal class LoadingViewModel : INotifyPropertyChanged
     {
         private LoadingModel model;
 
@@ -24,13 +24,12 @@ namespace crypto_wpf.ViewModels
             {
                 return null;
             }
-            OnPropertyChanged("ApiResponse");
             return response;
         }
 
-        public Boolean MoveToMainWindow() => model.CheckApiStatus();
+        public Boolean ApiStatus() => model.CheckApiStatus();
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {
             if (this.PropertyChanged != null)

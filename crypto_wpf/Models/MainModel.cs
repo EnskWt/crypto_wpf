@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace crypto_wpf.Models
 {
-    internal class MainModel
+    class MainModel
     {
         HttpClient httpClient = new HttpClient();
 
@@ -51,7 +51,7 @@ namespace crypto_wpf.Models
             table.Columns.Add("Name", typeof(string));
             table.Columns.Add("Symbol", typeof(string));
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 7; i++)
             {
                 DataRow row = table.NewRow();
                 row["ID"] = topCurrencyList.coins[i].item.id;
@@ -62,35 +62,5 @@ namespace crypto_wpf.Models
             }
             return table;
         }
-    }
-
-    class Currency
-    {
-        public string id { get; set; }
-        public string symbol { get; set; }
-        public string name { get; set; }
-    }
-    class TopCoinsJsonObject
-    {
-        public List<Coins> coins { get; set; }
-
-    }
-    class Coins
-    {
-        public Items item { get; set; }
-    }
-    class Items
-    {
-        public string id { get; set; }
-        public string coin_id { get; set; }
-        public string name { get; set; }
-        public string symbol { get; set; }
-        public string market_cap_rank { get; set; }
-        public string thumb { get; set; }
-        public string small { get; set; }
-        public string large { get; set; }
-        public string slug { get; set; }
-        public string price_btc { get; set; }
-        public string score { get; set; }
     }
 }

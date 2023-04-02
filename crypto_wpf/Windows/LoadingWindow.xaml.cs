@@ -31,7 +31,7 @@ namespace crypto_wpf
 
         private void login_Button_Click(object sender, RoutedEventArgs e)
         {
-            if (viewModel.MoveToMainWindow())
+            if (viewModel.ApiStatus())
             {
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
@@ -39,9 +39,9 @@ namespace crypto_wpf
             }
         }
 
-        private void Window_Initialized(object sender, EventArgs e)
+        private async void Window_Initialized(object sender, EventArgs e)
         {
-            viewModel.ApiResponse();
+            await viewModel.ApiResponse();
         }
     }
 }

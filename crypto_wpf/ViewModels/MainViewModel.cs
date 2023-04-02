@@ -32,7 +32,7 @@ namespace crypto_wpf.ViewModels
         }
 
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {
             if (this.PropertyChanged != null)

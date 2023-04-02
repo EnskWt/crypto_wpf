@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 E:\Projects\crypto_wpf\crypto_wpf\App.xaml
-2-945756977
+3-419741998
 
-11911008848
-200340282557
-Windows\LoadingWindow.xaml;Windows\MainWindow.xaml;
+15-1294780993
+199-1187849440
+Windows\CoinWindow.xaml;Windows\LoadingWindow.xaml;Windows\MainWindow.xaml;
 
-False
+True
 
