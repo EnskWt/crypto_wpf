@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="LoadingWindow" Height="450" Width="800" Initialized="Window_Initialized">
     <Grid>
-        <Button x:Name="login_Button" Content="Log In" HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top" Width="310" Height="38" Click="login_Button_Click"/>
+        <Button x:Name="login_Button" Content="Enter" HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top" Width="310" Height="38" Click="login_Button_Click" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label Content="Using CoinGecko API" HorizontalAlignment="Center" Margin="0,338,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label Content="Click to enter" HorizontalAlignment="Center" Margin="0,136,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="22"/>
     </Grid>
 </Window>
