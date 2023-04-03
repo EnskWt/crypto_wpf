@@ -13,5 +13,6 @@ namespace crypto_wpf.Classes
         public static string? CoinId;
         public static string? SearchParameter;
         public static CoinInfoJsonObject? LocalCoinInfoObject;
+        public static string? CurrentStyle = "Light";
     }
 }

@@ -7,11 +7,12 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Documents;
 
 namespace crypto_wpf.ViewModels
 {
-    internal class MainViewModel : INotifyPropertyChanged
+    internal class MainViewModel : ViewModel
     {
         private MainModel model;
 
@@ -29,17 +30,6 @@ namespace crypto_wpf.ViewModels
         {
             DataTable topCurrencyTable = await model.FillTopCurrencyTable();
             return topCurrencyTable;
-        }
-
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                var e = new PropertyChangedEventArgs(propertyName);
-                this.PropertyChanged(this, e);
-            }
         }
     }
 }

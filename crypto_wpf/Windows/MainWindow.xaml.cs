@@ -35,6 +35,8 @@ namespace crypto_wpf.Windows
 
         private async void Window_Initialized(object sender, EventArgs e)
         {
+            viewModel.Theme();
+
             DataTable currencyTable = await viewModel.GetCurrencyTable();
             currency_dataGrid.ItemsSource = currencyTable.DefaultView;
 
@@ -66,6 +68,26 @@ namespace crypto_wpf.Windows
             DataStorage.CoinId = (topCurrency_dataGrid.SelectedItem as DataRowView)?.Row["ID"].ToString(); /* The currently selected row is represented as a DataRow system class and due to this it can use the methods of the DataRow class */
             CoinWindow coinWindow = new CoinWindow();
             coinWindow.Show();
+        }
+
+        private void ThemeChange(object sender, RoutedEventArgs e)
+        {
+            if (DataStorage.CurrentStyle == "Dark")
+            {
+                DataStorage.CurrentStyle = "Light";
+            }
+            else if (DataStorage.CurrentStyle == "Light")
+            {
+                DataStorage.CurrentStyle = "Dark";
+            }
+
+            viewModel.Theme();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ConverterWindow converterWindow = new ConverterWindow();
+            converterWindow.Show();
         }
     }
 }

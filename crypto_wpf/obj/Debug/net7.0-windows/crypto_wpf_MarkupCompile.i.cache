@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 E:\Projects\crypto_wpf\crypto_wpf\App.xaml
-3-419741998
+6-764263213
 
-15-1294780993
+19-1348303389
 199-1187849440
-Windows\CoinWindow.xaml;Windows\LoadingWindow.xaml;Windows\MainWindow.xaml;
+Windows\CoinWindow.xaml;Windows\ConverterWindow.xaml;Windows\LoadingWindow.xaml;Windows\MainWindow.xaml;Windows\Styles\Dark.xaml;Windows\Styles\Light.xaml;
 
 True
 

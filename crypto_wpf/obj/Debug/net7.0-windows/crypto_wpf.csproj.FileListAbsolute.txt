@@ -25,4 +25,7 @@ E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\MainWindow.g.
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\MainWindow.baml
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\CoinWindow.g.cs
 E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\CoinWindow.baml
-E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\Styles\Dark.baml
+E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\Styles\Light.baml
+E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\ConverterWindow.g.cs
+E:\Projects\crypto_wpf\crypto_wpf\obj\Debug\net7.0-windows\Windows\ConverterWindow.baml

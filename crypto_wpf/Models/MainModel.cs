@@ -39,6 +39,7 @@ namespace crypto_wpf.Models
             }
             return table;   
         }
+
         public async Task<DataTable> FillTopCurrencyTable()
         {
             var response = await httpClient.GetAsync("https://api.coingecko.com/api/v3/search/trending");

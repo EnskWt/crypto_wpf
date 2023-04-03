@@ -11,7 +11,7 @@ using System.Windows;
 
 namespace crypto_wpf.ViewModels
 {
-    internal class CoinViewModel : INotifyPropertyChanged
+    internal class CoinViewModel : ViewModel
     {
         private CoinModel model;
         public CoinViewModel()

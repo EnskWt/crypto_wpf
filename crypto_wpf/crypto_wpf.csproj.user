@@ -10,6 +10,9 @@
     <Compile Update="Windows\CoinWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\ConverterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\LoadingWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,6 +21,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Windows\ConverterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Styles\Dark.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Styles\Light.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Windows\CoinWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -1,4 +1,5 @@
-﻿using crypto_wpf.ViewModels;
+﻿using crypto_wpf.Classes;
+using crypto_wpf.ViewModels;
 using crypto_wpf.Windows;
 using System;
 using System.Collections.Generic;
@@ -41,6 +42,8 @@ namespace crypto_wpf
 
         private async void Window_Initialized(object sender, EventArgs e)
         {
+            DataStorage.CurrentStyle = "Light";
+
             await viewModel.ApiResponse();
         }
     }

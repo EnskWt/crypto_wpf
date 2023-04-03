@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace crypto_wpf.ViewModels
 {
-    internal class LoadingViewModel : INotifyPropertyChanged
+    internal class LoadingViewModel : ViewModel
     {
         private LoadingModel model;
 

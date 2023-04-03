@@ -6,97 +6,97 @@
         xmlns:local="clr-namespace:crypto_wpf.Windows"
         mc:Ignorable="d"
         Title="CoinWindow" Height="465" Width="815" Initialized="Window_Initialized"
-        ResizeMode="CanMinimize">
+        ResizeMode="CanMinimize" Style="{DynamicResource WindowStyle}">
     <Grid Width="800" Height="435">
-        <Border BorderBrush="Black" BorderThickness="1" Margin="10,146,417,147" CornerRadius="5,5,5,5"/>
-        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5,5,5,5" Margin="10,293,616,23"/>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="388,146,186,86" CornerRadius="5,5,5,5"/>
-        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5,5,5,5" Margin="189,293,417,23"/>
-        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5,5,5,5" Margin="388,353,186,23"/>
-        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5,5,5,5" Margin="619,353,25,23"/>
-        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5,5,5,5" Margin="619,146,25,86"/>
+        <Border BorderThickness="1" Margin="10,146,417,147" CornerRadius="5,5,5,5" Style="{DynamicResource BorderStyle}"/>
+        <Border BorderThickness="1" CornerRadius="5,5,5,5" Margin="10,293,616,23" Style="{DynamicResource BorderStyle}"/>
+        <Border BorderThickness="1" Margin="388,146,186,86" CornerRadius="5,5,5,5" Style="{DynamicResource BorderStyle}"/>
+        <Border BorderThickness="1" CornerRadius="5,5,5,5" Margin="189,293,417,23" Style="{DynamicResource BorderStyle}"/>
+        <Border BorderThickness="1" CornerRadius="5,5,5,5" Margin="388,353,186,23" Style="{DynamicResource BorderStyle}"/>
+        <Border BorderThickness="1" CornerRadius="5,5,5,5" Margin="619,353,25,23" Style="{DynamicResource BorderStyle}"/>
+        <Border BorderThickness="1" CornerRadius="5,5,5,5" Margin="619,146,25,86" Style="{DynamicResource BorderStyle}"/>
 
-        <TextBox x:Name="search_TextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontFamily="Cascadia Code" FontSize="16"/>
-        <Button x:Name="search_Button" Content="Search" HorizontalAlignment="Left" Margin="207,10,0,0" VerticalAlignment="Top" Height="21" Width="72" FontFamily="Cascadia Code" FontSize="16" Click="search_Button_Click"/>
+        <TextBox x:Name="search_TextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource TextBoxStyle}"/>
+        <Button x:Name="search_Button" Content="Search" HorizontalAlignment="Left" Margin="207,10,0,0" VerticalAlignment="Top" Height="21" Width="72" FontFamily="Cascadia Code" FontSize="16" Click="search_Button_Click" Style="{DynamicResource ButtonStyle}"/>
         <Image x:Name="coin_Picture" HorizontalAlignment="Left" Height="100" Margin="10,36,0,0" VerticalAlignment="Top" Width="100"/>
 
-        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Symbol" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Hashing algorithm:" HorizontalAlignment="Left" Margin="10,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Symbol" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Hashing algorithm:" HorizontalAlignment="Left" Margin="10,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
 
-        <Label Content="CoinGecko rank:" HorizontalAlignment="Left" Margin="388,146,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="CoinGecko score:" HorizontalAlignment="Left" Margin="388,180,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Developer score:" HorizontalAlignment="Left" Margin="388,214,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Community score:" HorizontalAlignment="Left" Margin="388,248,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Liquidity score:" HorizontalAlignment="Left" Margin="388,282,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Interest score:" HorizontalAlignment="Left" Margin="388,316,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label Content="CoinGecko rank:" HorizontalAlignment="Left" Margin="388,146,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="CoinGecko score:" HorizontalAlignment="Left" Margin="388,180,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Developer score:" HorizontalAlignment="Left" Margin="388,214,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Community score:" HorizontalAlignment="Left" Margin="388,248,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Liquidity score:" HorizontalAlignment="Left" Margin="388,282,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Interest score:" HorizontalAlignment="Left" Margin="388,316,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
 
-        <Label Content="Market:" HorizontalAlignment="Left" Margin="189,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.191" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Trust score:" HorizontalAlignment="Left" Margin="189,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.191" FontFamily="Cascadia Code" FontSize="16"/>
-        <TextBlock x:Name="marketUrl_Text" HorizontalAlignment="Left" Margin="221,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16">
-            <Hyperlink x:Name="marketUrl_Hyperlink" RequestNavigate="hyperlink_RequestNavigate">
+        <Label Content="Market:" HorizontalAlignment="Left" Margin="189,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.191" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Trust score:" HorizontalAlignment="Left" Margin="189,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.191" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <TextBlock x:Name="marketUrl_Text" HorizontalAlignment="Left" Margin="221,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource TextBlockStyle}">
+            <Hyperlink x:Name="marketUrl_Hyperlink" RequestNavigate="hyperlink_RequestNavigate" Style="{DynamicResource HyperlinkStyle}">
                 <Run x:Name="marketUrl_Hyperlink_Text">Market's URL</Run>
             </Hyperlink>
         </TextBlock>
 
-        <TextBlock x:Name="homepage_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174">
-            <Hyperlink x:Name="homepage_Hyperlink" RequestNavigate="hyperlink_RequestNavigate">
+        <TextBlock x:Name="homepage_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174" Style="{DynamicResource TextBlockStyle}">
+            <Hyperlink x:Name="homepage_Hyperlink" RequestNavigate="hyperlink_RequestNavigate" Style="{DynamicResource HyperlinkStyle}">
                 <Run x:Name="homepage_Hyperlink_Text">Homepage</Run>
             </Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="blockchain_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174">
-            <Hyperlink x:Name="blockchain_Hyperlink" RequestNavigate="hyperlink_RequestNavigate">
+        <TextBlock x:Name="blockchain_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174" Style="{DynamicResource TextBlockStyle}">
+            <Hyperlink x:Name="blockchain_Hyperlink" RequestNavigate="hyperlink_RequestNavigate" Style="{DynamicResource HyperlinkStyle}">
                 <Run x:Name="blockchain_Hyperlink_Text">Blockchain Site</Run>
             </Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="chat_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174">
-            <Hyperlink x:Name="chat_Hyperlink" RequestNavigate="hyperlink_RequestNavigate">
+        <TextBlock x:Name="chat_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174" Style="{DynamicResource TextBlockStyle}">
+            <Hyperlink x:Name="chat_Hyperlink" RequestNavigate="hyperlink_RequestNavigate" Style="{DynamicResource HyperlinkStyle}">
                 <Run x:Name="chat_Hyperlink_Text">Chat</Run>
             </Hyperlink>
         </TextBlock>
-        <TextBlock x:Name="reddit_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174">
-            <Hyperlink x:Name="reddit_Hyperlink" RequestNavigate="hyperlink_RequestNavigate">
+        <TextBlock x:Name="reddit_Text" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="174" Style="{DynamicResource TextBlockStyle}">
+            <Hyperlink x:Name="reddit_Hyperlink" RequestNavigate="hyperlink_RequestNavigate" Style="{DynamicResource HyperlinkStyle}">
                 <Run x:Name="reddit_Hyperlink_Text">Reddit</Run>
             </Hyperlink>
         </TextBlock>
-        <Label Content="Price:" HorizontalAlignment="Left" Margin="118,36,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Volume:" HorizontalAlignment="Left" Margin="118,70,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="High in 24h:" HorizontalAlignment="Left" Margin="389,354,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="Low in 24h:" HorizontalAlignment="Left" Margin="389,383,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label Content="ATH:" HorizontalAlignment="Left" Margin="619,354,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.484,0.386"/>
-        <Label Content="ATL:" HorizontalAlignment="Left" Margin="619,383,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.905,-1.607"/>
-        <Label Content="24h change (%)" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="619,146,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="156"/>
-        <Label Content="7d change (%)" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="619,207,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.468,0.885" Width="156"/>
-        <Label Content="30d change (%)" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="619,268,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.468,0.876" Width="156"/>
+        <Label Content="Price:" HorizontalAlignment="Left" Margin="118,36,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Volume:" HorizontalAlignment="Left" Margin="118,70,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="High in 24h:" HorizontalAlignment="Left" Margin="389,354,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="Low in 24h:" HorizontalAlignment="Left" Margin="389,383,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="ATH:" HorizontalAlignment="Left" Margin="619,354,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.484,0.386" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="ATL:" HorizontalAlignment="Left" Margin="619,383,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.905,-1.607" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="24h change (%)" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="619,146,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" Width="156" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="7d change (%)" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="619,207,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.468,0.885" Width="156" Style="{DynamicResource LabelStyle}"/>
+        <Label Content="30d change (%)" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="619,268,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="16" RenderTransformOrigin="0.468,0.876" Width="156" Style="{DynamicResource LabelStyle}"/>
 
-        <Label x:Name="coinName" Content="" HorizontalAlignment="Left" Margin="72,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="coinSymbol" Content="" HorizontalAlignment="Left" Margin="81,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="coinId" Content="" HorizontalAlignment="Left" Margin="53,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="coinHashing" Content="" HorizontalAlignment="Left" Margin="194,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label x:Name="coinName" Content="" HorizontalAlignment="Left" Margin="72,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="coinSymbol" Content="" HorizontalAlignment="Left" Margin="81,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="coinId" Content="" HorizontalAlignment="Left" Margin="53,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="coinHashing" Content="" HorizontalAlignment="Left" Margin="194,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
 
-        <Label x:Name="marketName" Content="" HorizontalAlignment="Left" Margin="270,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="trustScore" Content="" HorizontalAlignment="Left" Margin="316,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label x:Name="marketName" Content="" HorizontalAlignment="Left" Margin="270,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="trustScore" Content="" HorizontalAlignment="Left" Margin="316,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
 
-        <Label x:Name="cgRank" Content="" HorizontalAlignment="Left" Margin="544,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="cgScore" Content="" HorizontalAlignment="Left" Margin="553,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="developerScore" Content="" HorizontalAlignment="Left" Margin="553,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="communityScore" Content="" HorizontalAlignment="Left" Margin="553,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="liquidityScore" Content="" HorizontalAlignment="Left" Margin="553,281,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="interestScore" Content="" HorizontalAlignment="Left" Margin="544,315,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label x:Name="cgRank" Content="" HorizontalAlignment="Left" Margin="544,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="cgScore" Content="" HorizontalAlignment="Left" Margin="553,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="developerScore" Content="" HorizontalAlignment="Left" Margin="553,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="communityScore" Content="" HorizontalAlignment="Left" Margin="553,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="liquidityScore" Content="" HorizontalAlignment="Left" Margin="553,281,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="interestScore" Content="" HorizontalAlignment="Left" Margin="544,315,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
 
-        <Label x:Name="change24h" HorizontalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="619,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Width="156"/>
-        <Label x:Name="change7d" HorizontalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="619,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Width="156"/>
-        <Label x:Name="change30d" HorizontalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="619,297,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Width="156"/>
+        <Label x:Name="change24h" HorizontalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="619,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Width="156" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="change7d" HorizontalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="619,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Width="156" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="change30d" HorizontalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="619,297,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Width="156" Style="{DynamicResource LabelStyle}"/>
 
-        <Label x:Name="coinPrice" Content="" HorizontalAlignment="Left" Margin="189,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="coinVolume" Content="" HorizontalAlignment="Left" Margin="199,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="high24h" Content="" HorizontalAlignment="Left" Margin="516,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="low24h" Content="" HorizontalAlignment="Left" Margin="507,383,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="coinAth" Content="" HorizontalAlignment="Left" Margin="671,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
-        <Label x:Name="coinAtl" Content="" HorizontalAlignment="Left" Margin="671,383,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16"/>
+        <Label x:Name="coinPrice" Content="" HorizontalAlignment="Left" Margin="189,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="coinVolume" Content="" HorizontalAlignment="Left" Margin="199,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="high24h" Content="" HorizontalAlignment="Left" Margin="516,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="low24h" Content="" HorizontalAlignment="Left" Margin="507,383,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="coinAth" Content="" HorizontalAlignment="Left" Margin="671,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
+        <Label x:Name="coinAtl" Content="" HorizontalAlignment="Left" Margin="671,383,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.368,-1.27" FontFamily="Cascadia Code" FontSize="16" Style="{DynamicResource LabelStyle}"/>
 
-        <ComboBox x:Name="currency_comboBox" HorizontalAlignment="Left" Margin="700,10,0,0" VerticalAlignment="Top" Width="75" Height="26">
+        <ComboBox x:Name="currency_comboBox" HorizontalAlignment="Left" Margin="700,10,0,0" VerticalAlignment="Top" Width="75" Height="26" Style="{DynamicResource ComboBoxStyle}">
             <ComboBoxItem x:Name="usd_item" Selected="usd_item_Selected">
                 <StackPanel>
                     <TextBlock FontSize="16">USD</TextBlock>

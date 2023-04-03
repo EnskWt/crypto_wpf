@@ -32,8 +32,9 @@ namespace crypto_wpf.Windows
         private async void Window_Initialized(object sender, EventArgs e)
         {
             await FillWindow();
-        }
 
+            viewModel.Theme();
+        }
         public async Task FillWindow()
         {
             var converter = new ImageSourceConverter();
